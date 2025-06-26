@@ -1,0 +1,1 @@
+# Placeholder for Onecoin blockchain core logic (PoS implementation)
