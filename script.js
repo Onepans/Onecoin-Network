@@ -1,1 +1,7 @@
-console.log("Wallet UI loaded");
+function sendCoin() {
+  alert("Send functionality coming soon.");
+}
+
+function receiveCoin() {
+  alert("Receive functionality coming soon.");
+}
