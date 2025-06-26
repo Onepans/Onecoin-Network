@@ -1,0 +1,1 @@
+# Placeholder for the distribution logic (airdrop, initial wallet setup)
