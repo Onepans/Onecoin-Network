@@ -1,15 +1,15 @@
 function sendCoin() {
-  const recipient = prompt("أدخل عنوان المستلم:");
-  const amount = prompt("أدخل كمية ONE لإرسالها:");
+  const recipient = document.getElementById("recipient").value;
+  const amount = document.getElementById("amount").value;
 
   if (recipient && amount) {
-    alert(`جاري إرسال ${amount} ONE إلى العنوان:\n${recipient}\n\n(تنبيه: هذا نموذج وهمي للعرض فقط)`);
+    alert(`✅ تم إرسال ${amount} ONE إلى:\n${recipient}\n\n(ملاحظة: هذا عرض تجريبي فقط. لا يتم تنفيذ معاملة حقيقية)`);
   } else {
-    alert("يجب إدخال كل من العنوان والكمية.");
+    alert("⚠️ الرجاء ملء كل الحقول قبل الإرسال.");
   }
 }
 
 function receiveCoin() {
   const myAddress = document.getElementById("walletAddress").value;
-  alert(`استخدم العنوان التالي لاستلام العملة:\n${myAddress}`);
+  alert(`استخدم هذا العنوان لاستلام عملاتك:\n${myAddress}`);
 }
