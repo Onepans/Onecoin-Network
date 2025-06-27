@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Onecoin Wallet</title>
+  <title>محفظة Onecoin</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Onecoin Network</h1>
-    <p>This is your wallet interface.</p>
-    <button onclick="sendCoin()">Send Coin</button>
-    <button onclick="receiveCoin()">Receive Coin</button>
+    <h1>مرحبًا بك في شبكة Onecoin</h1>
+    <div class="wallet-box">
+      <label>عنوان المحفظة:</label>
+      <input type="text" id="walletAddress" readonly value="ONE-1234-5678-ABCD" />
+
+      <label>كلمة السر:</label>
+      <input type="password" id="password" placeholder="••••••••" />
+
+      <label>الرصيد (ONE):</label>
+      <input type="text" id="balance" readonly value="1.000 ONE" />
+
+      <label>القيمة بالدولار:</label>
+      <input type="text" id="usdValue" readonly value="10.00 USD" />
+
+      <div class="buttons">
+        <button onclick="sendCoin()">إرسال</button>
+        <button onclick="receiveCoin()">استلام</button>
+      </div>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
