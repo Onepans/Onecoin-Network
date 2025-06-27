@@ -22,6 +22,14 @@
       <label>القيمة بالدولار:</label>
       <input type="text" id="usdValue" readonly value="10.00 USD" />
 
+      <div class="send-box">
+        <label>عنوان المستلم:</label>
+        <input type="text" id="recipient" placeholder="أدخل عنوان المستلم" />
+
+        <label>الكمية (ONE):</label>
+        <input type="number" id="amount" placeholder="كمية الإرسال" />
+      </div>
+
       <div class="buttons">
         <button onclick="sendCoin()">إرسال</button>
         <button onclick="receiveCoin()">استلام</button>
